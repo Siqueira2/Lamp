@@ -7,6 +7,7 @@
 :root {
     --white: #fff;
     --yellow: #fed116;
+    --gray: #23242D;
 }
 
 body {
@@ -20,20 +21,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.on {
+.off {
     background-color: #23242D;
 }
 
 h1 {
     font-size: 2.6em;
+    color: var(--gray);
+}
+
+.titleoff {
     color: var(--yellow);
 }
 
 button {
-    color: white;
+    color: var(--gray);
     padding: 5px 0px;
     background-color: transparent;
-    border: .8px solid var(--yellow);
+    border: .8px solid var(--gray);
     border-radius: 50px ;
     width: 150px;
     font-size: 1em;
@@ -41,5 +46,15 @@ button {
 }
 
 button:hover {
+    color: var(--white);
+    background-color: var(--gray);
+}
+.buttonoff {
+    color: var(--white);
+    border: .8px solid var(--yellow);
+}
+
+.buttonoff:hover {
+    color: var(--white);
     background-color: var(--yellow);
 }
